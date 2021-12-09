@@ -1,0 +1,46 @@
+table .collapser {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table tr td {
+    font-size: 13px;
+    color: #000;
+}
+
+table th {
+    background-color: #B3C6E7;
+    text-align: left;
+    color: #000;
+    font-size: 13px;
+}
+
+table tr .right {
+    text-align: right;
+    font-size: 13px;
+    color: #000;
+}
+
+table tr .center {
+    text-align: center;
+    font-size: 13px;
+    color: #000;
+}
+
+table tr .text {
+    text-align: justify;
+    font-size: 13px;
+    color: #000;
+}
+
+table tr .top {
+    display: flex;
+    align-items: top;
+    color: #000;
+}
+
+table tr .price {
+    text-align: right;
+    color: #000;
+    font-size: 13px;
+}

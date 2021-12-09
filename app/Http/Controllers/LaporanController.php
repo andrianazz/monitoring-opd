@@ -29,7 +29,7 @@ class LaporanController extends Controller
         }
 
 
-        $print =  view('laporan.laporanOPD', compact(['government', 'task', 'subtask', 'title']));
+        $print =  view('laporan.laporanOPD2', compact(['government', 'task', 'subtask', 'title']));
         return $print;
 
         $dompdf = new Dompdf();

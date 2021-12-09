@@ -34,6 +34,9 @@
 
     <!-- Custom Theme Style -->
     <link href="{{ asset('../build/css/custom.min.css') }}" rel="stylesheet">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="{{ asset('build/css/stylesheet.css') }}">
+
 </head>
 
 <body class="nav-md">
@@ -108,6 +111,7 @@
             </div>
 
             <!-- top navigation -->
+            @if ($title != "Laporan OPD")
             <div class="top_nav">
                 <div class="nav_menu">
                     <nav>
@@ -130,17 +134,20 @@
                     </nav>
                 </div>
             </div>
+            @endif
             <!-- /top navigation -->
 
             @yield('content')
 
             <!-- footer content -->
+            @if ($title != "Laporan OPD")
             <footer>
                 <div class="pull-right">
                     Copyright : UIN SUSKA RIAU - Andrian Wahyu
                 </div>
                 <div class="clearfix"></div>
             </footer>
+            @endif
             <!-- /footer content -->
         </div>
     </div>
