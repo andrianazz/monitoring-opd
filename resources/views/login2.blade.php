@@ -16,7 +16,9 @@
 
     <div class="login">
         <div class="text-center">
-            <img src="{{ asset('images/logo.png') }}" width="80"></img>
+            <center>
+                <img src="{{ asset('images/logo.png') }}" width="50"></img>
+            </center>
         </div>
 
         <h1>Login</h1>
