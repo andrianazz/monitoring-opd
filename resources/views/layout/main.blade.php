@@ -111,7 +111,7 @@
             </div>
 
             <!-- top navigation -->
-            @if ($title != "Laporan OPD")
+            @if ($title != "Laporan")
             <div class="top_nav">
                 <div class="nav_menu">
                     <nav>
@@ -140,7 +140,7 @@
             @yield('content')
 
             <!-- footer content -->
-            @if ($title != "Laporan OPD")
+            @if ($title != "Laporan")
             <footer>
                 <div class="pull-right">
                     Copyright : UIN SUSKA RIAU - Andrian Wahyu

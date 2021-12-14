@@ -17,7 +17,7 @@ class LaporanController extends Controller
     {
         $government = Government::find($id);
         $task = Task::where('government_id', '=', $id)->get();
-        $title = 'Laporan OPD';
+        $title = 'Laporan';
 
 
         foreach ($task as $t) {
@@ -49,7 +49,7 @@ class LaporanController extends Controller
     {
         $government = Government::find($id);
         $task = Task::where('government_id', '=', $id)->get();
-        $title = 'Laporan OPD';
+        $title = 'Laporan';
 
 
         foreach ($task as $t) {
@@ -78,7 +78,7 @@ class LaporanController extends Controller
 
     public function laporanDokumentasi($id)
     {
-        $title = 'Laporan Dokumentasi';
+        $title = 'Laporan';
         $subtask = Subtask::find($id);
         $data = Photo::where('subtask_id', '=', $subtask->id)->get();
 

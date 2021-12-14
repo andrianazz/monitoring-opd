@@ -23,6 +23,9 @@
 
         <h1>Login</h1>
         <h1 style="color: whitesmoke;"> Monitoring OPD</h1>
+        @if ($message = Session::get('failed'))
+        <div class="alert alert-danger" role="alert">{{ $message }}</div>
+        @endif
         <form action="/login/auth" method="POST">
             @csrf
             <input type="text" name="user_id" placeholder="USER ID" required="required" />

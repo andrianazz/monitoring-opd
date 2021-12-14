@@ -33,7 +33,7 @@ class LoginController extends Controller
         // if ($password) {
         //     return redirect('/')->with('person', $data);
         // }
-        return redirect('/login');
+        return redirect('/login')->with('failed', 'Username atau Password Salah');
     }
 
     public function logout()
