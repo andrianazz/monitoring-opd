@@ -62,7 +62,7 @@ return $hasil_rupiah;
                             @foreach ($task as $row)
                             <tr>
                                 <td>{{ $x++ }}</td>
-                                <td> <a href="/task/{{ $row->id }}/subtask">{{ $row->name }}</a> </td>
+                                <td> <a href="/task/{{ $row->id }}/subtask"> <i class="fa fa-plus-circle" style="color: green;"></i> {{ $row->name }}</a> </td>
                                 <td class="text-right">{{ rupiah($row->total) }}</td>
                                 <td class="text-center"><a href="/task/{{$row->id}}/edit/{{$row->government_id}}" class="btn btn-info"> <i class="fa fa-edit"></i> Edit</a></td>
                                 <form action="/task/{{$row->id}}/delete" method="POST">

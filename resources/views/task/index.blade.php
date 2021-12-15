@@ -6,7 +6,7 @@
     <div class="">
         <div class="page-title">
             <div class="title_left">
-                <h3>Seluruh Organisasi Pemerintah Daerah</h3>
+                <h3>Seluruh Organisasi Perangkat Daerah</h3>
             </div>
             <div class="title_right text-right">
                 <select name="month" class="form-control">
@@ -47,9 +47,9 @@
                                             <a href="/laporan/{{$row->id}}" class="btn btn-app" style="margin-top: 10px;margin-bottom: 20px;">
                                                 <i class="fa fa-file-pdf-o"></i>Lihat Laporan
                                             </a>
-                                            <a href="/laporan/{{$row->id}}/pdf" class="btn btn-app" style="margin-top: 10px;margin-bottom: 20px;">
+                                            <!-- <a href="/laporan/{{$row->id}}/pdf" class="btn btn-app" style="margin-top: 10px;margin-bottom: 20px;">
                                                 <i class="fa fa-file-pdf-o"></i> Download Laporan
-                                            </a>
+                                            </a> -->
                                         </div>
                                     </div>
                                 </a>

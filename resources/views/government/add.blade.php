@@ -4,7 +4,7 @@
 <div class="right_col" role="main">
     <div class="page-title">
         <div class="title_left">
-            <h3>Tambah Organisasi Pemerintahan Daerah</h3>
+            <h3>Tambah Organisasi Perangkat Daerah</h3>
         </div>
     </div>
 

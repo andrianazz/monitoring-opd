@@ -4,7 +4,7 @@
 <div class="right_col" role="main">
     <div class="page-title">
         <div class="title_left">
-            <h3>Organisasi Pemerintahan Daerah</h3>
+            <h3>Organisasi Perangkat Daerah</h3>
         </div>
     </div>
 
@@ -12,7 +12,7 @@
         <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="x_panel">
                 <div class="x_title">
-                    <h2>Organisasi Pemerintah Daerah <small>OPD</small></h2>
+                    <h2>Organisasi Perangkat Daerah <small>OPD</small></h2>
                     <ul class="nav navbar-right panel_toolbox">
                         <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
                         <li><a class="close-link"><i class="fa fa-close"></i></a></li>
@@ -28,7 +28,7 @@
                         <thead>
                             <tr>
                                 <th width="20">No.</th>
-                                <th>Organisasi Pemerintah Daerah</th>
+                                <th>Organisasi Perangkat Daerah</th>
                                 <th>Alamat</th>
                                 <th width="70">Status</th>
                                 @if (auth()->user()->id == 1)

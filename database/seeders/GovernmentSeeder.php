@@ -17,35 +17,35 @@ class GovernmentSeeder extends Seeder
         //
         Government::create([
             'name' => 'Admin Sistem',
-            'address' => ' Sistem Informasi Terkait',
+            'address' => 'Instansi terkait',
         ]);
         Government::create([
             'name' => 'Dinas Pendidikan dan Kebudayaan',
-            'address' => ' Jl. Slamet Riyadi',
+            'address' => 'Jl. Slamet Riyadi',
         ]);
         Government::create([
             'name' => 'Dinas Kesehatan',
-            'address' => ' Jl. Jendral Sudirman No.417',
+            'address' => 'Jl. Jendral Sudirman No.417',
         ]);
         Government::create([
             'name' => 'Dinas Pekerjaan Umum dan Penataan Ruang',
-            'address' => ' Jl. Jendral Sudirman No.272',
+            'address' => 'Jl. Jendral Sudirman No.272',
         ]);
         Government::create([
             'name' => 'Dinas Perumahan Rakyat dan Kawasan Permukiman',
-            'address' => ' Jl. Dr. Soetomo No. 18 Batang',
+            'address' => 'Jl. Dr. Soetomo No. 18 Batang',
         ]);
         Government::create([
             'name' => 'Dinas Sosial',
-            'address' => ' JL. Letjend.R.Suprapto, No. 04',
+            'address' => 'JL. Letjend.R.Suprapto, No. 04',
         ]);
         Government::create([
             'name' => 'Dinas Penanaman Modal dan Pelayanan Terpadu Satu Pintu',
-            'address' => ' Jl. Urip Sumoharjo No. 13 Batang 51212',
+            'address' => 'Jl. Urip Sumoharjo No. 13 Batang 51212',
         ]);
         Government::create([
             'name' => 'Dinas Perhubungan',
-            'address' => ' Jl. Raya Kandeman KM 05 Batang 51261',
+            'address' => 'Jl. Raya Kandeman KM 05 Batang 51261',
         ]);
     }
 }

@@ -72,7 +72,7 @@ return $hasil_rupiah;
                             @foreach ($subtask as $sub)
                             <tr>
                                 <td>{{ $x++ }}</td>
-                                <td> <a href="/subtask/{{$sub->id}}/upload">{{ $sub->name }}</a></td>
+                                <td> <a href="/subtask/{{$sub->id}}/upload"> <i class="fa fa-file-image-o" style="color: blue;"> </i> {{ $sub->name }}</a></td>
                                 <td>{{ strftime('%d-%B-%Y', strtotime($sub->date)) }}</td>
                                 <td class="text-right">{{ rupiah($sub->pagu) }}</td>
                                 <td class="text-center"><a href="/subtask/{{$sub->id}}/edit/{{$sub->task_id}}" class="btn btn-info"> <i class="fa fa-edit"></i> Edit</a></td>

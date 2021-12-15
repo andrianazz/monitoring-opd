@@ -8,7 +8,9 @@ use App\Models\Task;
 use App\Models\Photo;
 use App\Models\Subtask;
 use App\Models\Government;
+use Barryvdh\DomPDF\PDF as DomPDFPDF;
 use Illuminate\Http\Request;
+use PDF;
 
 class LaporanController extends Controller
 {

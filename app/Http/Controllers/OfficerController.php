@@ -14,7 +14,7 @@ class OfficerController extends Controller
     //
     public function index()
     {
-        $data = User::all()->skip(1);
+        $data = User::orderBy('name')->get();
 
         $title = 'Data Pegawai';
         return view('officer.index', compact(['title', 'data']));
@@ -66,7 +66,7 @@ class OfficerController extends Controller
             $data = User::find($id);
 
             $data->update($request->all());
-            return redirect()->back();
+            return redirect()->route('officer');
         }
 
         return redirect()->route('edit_officer');

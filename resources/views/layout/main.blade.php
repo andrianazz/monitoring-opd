@@ -75,7 +75,7 @@
                                 <li><a href="/task"><i class="fa fa-bar-chart-o"></i> Kegiatan</a></li>
                                 <li><a><i class="fa fa-sitemap"></i> Data Master <span class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
-                                        <li><a href="/government">Organisasi Pemerintah Daerah</a></li>
+                                        <li><a href="/government">Organisasi Perangkat Daerah</a></li>
                                         <li><a href="/officer">Data Pegawai</a></li>
                                     </ul>
                                 </li>

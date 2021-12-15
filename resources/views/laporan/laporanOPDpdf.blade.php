@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laporan PDF</title>
     <!-- Bootstrap -->
@@ -43,7 +44,7 @@
             <tr class="text-center">
                 <td colspan="12" class="h3 font-weight-bold"> <b> BIRO ADMINISTRASI PEMBANGUNAN </b></td>
             </tr>
-            <!-- <tr height='500px'>
+            <tr height='500px'>
                 <td colspan="12"></td>
             </tr> -->
             <tr>
@@ -141,9 +142,9 @@
         </table>
     </div>
 
-    <!-- Bootstrap -->
+    <!-- <Bootstrap -->
     <script src="{{ asset('../vendors/bootstrap/dist/js/bootstrap.min.js') }}"></script>
-    <!-- Custom Theme Scripts -->
+    <!-- Custom Theme ScriptS -->
     <script src="{{ asset('../build/js/custom.min.js') }}"></script>
 </body>
 

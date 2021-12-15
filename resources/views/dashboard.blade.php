@@ -27,7 +27,7 @@
                 <div class="icon"><i class="fa fa-building"></i></div>
                 <div class="count">{{ $government->count() }}</div>
                 <h3>OPD</h3>
-                <p>Organisasi pemerintah yang terdaftar</p>
+                <p>Organisasi perangkat daerah yang terdaftar</p>
             </div>
         </div>
         <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
@@ -45,7 +45,7 @@
         <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="x_panel">
                 <div class="x_title">
-                    <h2>Organisasi Pemerintah Daerah <small>OPD</small></h2>
+                    <h2>Organisasi Pernagkat Daerah <small>OPD</small></h2>
                     <ul class="nav navbar-right panel_toolbox">
                         <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
                         <li><a class="close-link"><i class="fa fa-close"></i></a></li>
@@ -58,7 +58,7 @@
                         <thead>
                             <tr>
                                 <th width="20">No.</th>
-                                <th>Organisasi Pemerintah Daerah</th>
+                                <th>Organisasi Perangkat Daerah</th>
                                 <th width="70">Status</th>
 
                             </tr>
@@ -103,7 +103,7 @@
                                 <th width="120">NIP</th>
                                 <th>Email</th>
                                 <th width="70">Akses</th>
-                                <th>Organisasi Pemerintah Daerah</th>
+                                <th>Organisasi Perangkat Daerah</th>
 
                             </tr>
                         </thead>
@@ -121,7 +121,6 @@
                                 <td>{{ $job->government->name }}</td>
                             </tr>
                             @endforeach
-
                         </tbody>
                     </table>
                 </div>

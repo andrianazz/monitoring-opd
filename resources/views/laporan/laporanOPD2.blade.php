@@ -209,4 +209,7 @@ setlocale(LC_TIME, 'id_ID');
         </div>
     </div>
 </div>
+<script type="text/javascript">
+    window.print();
+</script>
 @endsection
