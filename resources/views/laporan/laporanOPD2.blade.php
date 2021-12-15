@@ -133,7 +133,7 @@ setlocale(LC_TIME, 'id_ID');
                                 <th>
                                     <font size="2">Uraian Kegiatan</font>
                                 </th>
-                                <th width="120">
+                                <th width="150">
                                     <font size="2">
                                         <center> Keuangan </center>
                                     </font>

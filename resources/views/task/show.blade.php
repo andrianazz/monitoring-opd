@@ -13,7 +13,7 @@ return $hasil_rupiah;
 <div class="right_col" role="main">
     <div class="page-title">
         <div class="title_left">
-            <h3> <a href="/task"><i class="fa fa-arrow-left"></i></a> {{ $government->name }}</h3>
+            <h3> <a href="/task/{{ date('m') }}"><i class="fa fa-arrow-left"></i></a> {{ $government->name }}</h3>
         </div>
     </div>
 
@@ -33,7 +33,7 @@ return $hasil_rupiah;
                     <div class="row" style="margin-bottom: 20px;">
                         <form action="/task/insert" method="post">
                             @csrf
-                            <div class="col-md-10">
+                            <div class="col-md-10 col-sm-12 col-xs-12">
                                 <label for="fullname">Nama Kegiatan * :</label>
                                 <input type="text" id="fullname" class="form-control" name="name" required="">
                             </div>

@@ -12,7 +12,7 @@ return $hasil_rupiah;
 <div class="right_col" role="main">
     <div class="page-title">
         <div class="title_left">
-            <h3> <a href="/task/{{$task->government_id}}/show"><i class="fa fa-arrow-left"></i></a> Penyusunan Dokumen Perencanaan Perangkat Daerah</h3>
+            <h3> <a href="/task/{{$task->government_id}}/show/{{ date('m') }}"><i class="fa fa-arrow-left"></i></a> Penyusunan Dokumen Perencanaan Perangkat Daerah</h3>
         </div>
     </div>
 
