@@ -15,10 +15,11 @@ use PDF;
 class LaporanController extends Controller
 {
     //
-    public function laporanOPD($id)
+    public function laporanOPD($id, $month)
     {
+        $bulan = $month;
         $government = Government::find($id);
-        $task = Task::where('government_id', '=', $id)->get();
+        $task = Task::whereMonth('created_at', '=', $bulan)->where('government_id', '=', $id)->get();
         $title = 'Laporan';
 
 
@@ -31,7 +32,7 @@ class LaporanController extends Controller
         }
 
 
-        $print =  view('laporan.laporanOPD2', compact(['government', 'task', 'subtask', 'title']));
+        $print =  view('laporan.laporanOPD2', compact(['government', 'task', 'subtask', 'title', 'bulan']));
         return $print;
 
         $dompdf = new Dompdf();

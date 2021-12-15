@@ -66,8 +66,8 @@ Route::group(['middleware' => 'auth'], function () {
 
 
     //KEGIATAN
-    Route::get('/task', [TaskController::class, 'index'])->name('task');
-    Route::get('/task/{id}/show', [TaskController::class, 'show'])->name('show_task');
+    Route::get('/task/{month}', [TaskController::class, 'index'])->name('task');
+    Route::get('/task/{id}/show/{month}', [TaskController::class, 'show'])->name('show_task');
     Route::post('/task/insert', [TaskController::class, 'insert'])->name('insert_task');
     Route::get('/task/{id}/edit/{govern}', [TaskController::class, 'edit'])->name('edit_task');
     Route::put('/task/{id}', [TaskController::class, 'update'])->name('update_task');
@@ -89,6 +89,6 @@ Route::group(['middleware' => 'auth'], function () {
 });
 
 //Laporan
-Route::get('laporan/{id}', [LaporanController::class, 'laporanOPD'])->name('laporan_opd');
+Route::get('laporan/{id}/{month}', [LaporanController::class, 'laporanOPD'])->name('laporan_opd');
 Route::get('laporan/{id}/pdf', [LaporanController::class, 'laporanOPDpdf'])->name('laporan_opd_pdf');
 Route::get('laporanDokumentasi/{id}', [LaporanController::class, 'laporanDokumentasi'])->name('laporan_dokumentasi');

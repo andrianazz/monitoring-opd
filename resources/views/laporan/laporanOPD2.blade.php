@@ -109,11 +109,15 @@ setlocale(LC_TIME, 'id_ID');
                             </tr>
                         </table>
                         <br>
+                        @php
+                        $dateObj = DateTime::createFromFormat('!m', $bulan);
+                        $monthName = $dateObj->format('F');
+                        @endphp
                         <table width="620">
                             <tr>
                                 <td class="text">
                                     <font size="2">Assalamua'laikum wr. wb., <br> Bersamaan surat ini kami sampaikan Satuan Kerja Perangkat Daerah
-                                        {{ $government->name }} menyampaikan Laporan Keuangan pada bulan Desember 2021.
+                                        {{ $government->name }} menyampaikan Laporan Keuangan pada bulan {{ $monthName }} {{ date('Y') }}.
                                         Sehubungan hal tersebut, diharapkan dapat melakukan tinjauan sesuai dengan deskripsi kegiatan sebagai berikut :
                                     </font>
                                 </td>

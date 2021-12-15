@@ -38,6 +38,7 @@ return $hasil_rupiah;
                                 <input type="text" id="fullname" class="form-control" name="name" required="">
                             </div>
                             <input type="hidden" name="government_id" value="{{$government->id}}">
+                            <input type="hidden" name="bulan" value="{{$bulan}}">
                             <div class="col-md-2 text-right" style="margin-top: 23px;">
                                 <button type="submit" class="btn btn-primary"> <i class="fa fa-plus"></i> Tambah Kegiatan</button>
                             </div>
