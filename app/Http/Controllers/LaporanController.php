@@ -8,6 +8,7 @@ use App\Models\Task;
 use App\Models\Photo;
 use App\Models\Subtask;
 use App\Models\Government;
+use App\Models\User;
 use Barryvdh\DomPDF\PDF as DomPDFPDF;
 use Illuminate\Http\Request;
 use PDF;
@@ -20,6 +21,7 @@ class LaporanController extends Controller
         $bulan = $month;
         $government = Government::find($id);
         $task = Task::whereMonth('created_at', '=', $bulan)->where('government_id', '=', $id)->get();
+        $user = User::find(1);
         $title = 'Laporan';
 
 
@@ -32,7 +34,7 @@ class LaporanController extends Controller
         }
 
 
-        $print =  view('laporan.laporanOPD2', compact(['government', 'task', 'subtask', 'title', 'bulan']));
+        $print =  view('laporan.laporanOPD2', compact(['government', 'task', 'subtask', 'title', 'bulan', 'user']));
         return $print;
 
         $dompdf = new Dompdf();
@@ -65,6 +67,9 @@ class LaporanController extends Controller
 
 
         $print =  view('laporan.laporanOPDpdf', compact(['government', 'task', 'subtask', 'title']));
+
+        // $pdf = PDF::loadView('laporan.laporanOPDpdf', compact(['government', 'task', 'subtask', 'title']));
+        // return $pdf->stream();
 
         $dompdf = new Dompdf();
         $dompdf->loadHtml($print);

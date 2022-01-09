@@ -20,7 +20,7 @@ class TaskController extends Controller
 
         if (auth()->user()->id > 1) {
             # code..
-            return redirect('/task/' . auth()->user()->government_id . '/show');
+            return redirect('/task/' . auth()->user()->government_id . '/show/' . date('m'));
         }
         $government = Government::all()->skip(1);
         // $task = Task::all();

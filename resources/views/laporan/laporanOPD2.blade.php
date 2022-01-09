@@ -190,8 +190,8 @@ setlocale(LC_TIME, 'id_ID');
                                 <td width="420"><br><br><br><br></td>
                                 <td class="center"> <b> Kepala Sub Bagian<br>
                                         Pengendalian APBD<br><br><br>
-                                        <u> Syarifah Afriza Aria Sandy, ST, MM </u><br>
-                                        NIP. 19770412 200903 2 003
+                                        <u> {{ $user->name }} </u><br>
+                                        NIP. {{ $user->nip }}
                                     </b></td>
                             </tr>
                         </table>

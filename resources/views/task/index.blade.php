@@ -48,21 +48,21 @@
 
                             <div class="row top_tiles">
                                 @foreach ($government as $row)
-                                <a href="/task/{{$row->id}}/show/{{$bulan}}">
-                                    <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                                        <div class="tile-stats" style="min-height: 280px; border: 2px grey solid;">
-                                            <div class="count">{{ $task->where('government_id','=',$row->id)->count() }} Kegiatan</div>
-                                            <h3 style="color: grey;"> {{ $row->name }} </h3>
-                                            <p>{{ $row->address }}</p>
-                                            <a href="/laporan/{{$row->id}}/{{$bulan}}" class="btn btn-app" style="margin-top: 10px;margin-bottom: 20px;">
-                                                <i class="fa fa-file-pdf-o"></i>Lihat Laporan
-                                            </a>
-                                            <!-- <a href="/laporan/{{$row->id}}/pdf" class="btn btn-app" style="margin-top: 10px;margin-bottom: 20px;">
+                                <!-- <a href="/task/{{$row->id}}/show/{{$bulan}}"> -->
+                                <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                    <div class="tile-stats" style="min-height: 280px; border: 2px grey solid;">
+                                        <div class="count">{{ $task->where('government_id','=',$row->id)->count() }} Kegiatan</div>
+                                        <h3 style="color: grey;"> {{ $row->name }} </h3>
+                                        <p>{{ $row->address }}</p>
+                                        <a href="/laporan/{{$row->id}}/{{$bulan}}" class="btn btn-app" style="margin-top: 10px;margin-bottom: 20px;">
+                                            <i class="fa fa-file-pdf-o"></i>Lihat Laporan
+                                        </a>
+                                        <!-- <a href="/laporan/{{$row->id}}/pdf" class="btn btn-app" style="margin-top: 10px;margin-bottom: 20px;">
                                                 <i class="fa fa-file-pdf-o"></i> Download Laporan
                                             </a> -->
-                                        </div>
                                     </div>
-                                </a>
+                                </div>
+                                <!-- </a> -->
                                 @endforeach
                             </div>
 
